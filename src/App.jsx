@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Blogs from './Components/Blogs/Blogs'
+import Blogs from './components/Blogs/Blogs'
 import Header from './components/Header/Header'
 import Bookmarks from './components/Bookmarks/Bookmarks';
 
@@ -14,7 +14,7 @@ function App() {
   }
 
   const handelReadTime = (time, id) => {
-    setReadingTime(readingTime + time);
+    setReadingTime(readingTime + time); 
     
     const removeBookmarks = bookmarks.filter(bookmark => bookmark.id !== id);
     setBookmarks(removeBookmarks)     
